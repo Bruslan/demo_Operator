@@ -3,12 +3,12 @@ package stub
 import (
 	"github.com/example-inc/bruslan-operator/pkg/apis/brus/v1alpha1"
 
-	"github.com/operator-framework/operator-sdk/pkg/sdk/action"
+	// "github.com/operator-framework/operator-sdk/pkg/sdk/action"
 	"github.com/operator-framework/operator-sdk/pkg/sdk/handler"
 	"github.com/operator-framework/operator-sdk/pkg/sdk/types"
-	"github.com/sirupsen/logrus"
+	// "github.com/sirupsen/logrus"
 	"k8s.io/api/core/v1"
-	"k8s.io/apimachinery/pkg/api/errors"
+	// "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"fmt"
@@ -27,11 +27,11 @@ func (h *Handler) Handle(ctx types.Context, event types.Event) error {
 	switch o := event.Object.(type) {
 	case *v1alpha1.Bruslan:
 
-		err := action.Create(newbusyBoxPod(o))
-		if err != nil && !errors.IsAlreadyExists(err){
-			logrus.Error("Failed to create busybox pod: %v",err)
-			return err
-		}
+		// err := action.Create(newbusyBoxPod(o))
+		// if err != nil && !errors.IsAlreadyExists(err){
+		// 	logrus.Error("Failed to create busybox pod: %v",err)
+		// 	return err
+		// }
 		fmt.Printf("the name of this cr is ",o.Name)
 		if o.Spec.BruslanDEMO {
 			o.Status.Status = "We have a true configuration"
