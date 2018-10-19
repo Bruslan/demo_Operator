@@ -1,0 +1,6 @@
+apiVersion: "brus.lan.com/v1alpha1"
+kind: "Bruslan"
+metadata:
+  name: "bruslan-ist-live-sepp"
+spec:
+  bruslanDemoBool: true

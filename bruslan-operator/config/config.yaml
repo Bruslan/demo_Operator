@@ -1,0 +1,3 @@
+apiVersion: brus.lan.com/v1alpha1
+kind: Bruslan
+projectName: bruslan-operator
