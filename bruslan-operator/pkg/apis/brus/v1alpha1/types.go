@@ -23,8 +23,8 @@ type Bruslan struct {
 
 type BruslanSpec struct {
 	// Fill me
-
-	BruslanDEMO bool `json ",bruslanDemoBool"`
+	BruslanDEMO     bool   `json ",bruslanDemoBool"`
+	NameSpaceString string `json ",nameSpaceString"`
 }
 type BruslanStatus struct {
 	// Fill me

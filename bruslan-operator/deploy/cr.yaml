@@ -4,3 +4,4 @@ metadata:
   name: "bruslan-ist-live-sepp"
 spec:
   bruslanDemoBool: true
+  nameSpaceString: "all"
